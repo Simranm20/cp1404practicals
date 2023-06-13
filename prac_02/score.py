@@ -11,7 +11,8 @@ import random
 def main():
     score = float(input("Enter score: "))
     print(get_result(score))
-    print("Random score:", get_result(random.randint(0, 100)))
+    score = random.randint(0, 100)
+    print("Random score:", score, get_result(score))
 
 
 def get_result(score):

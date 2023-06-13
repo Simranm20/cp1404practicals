@@ -5,19 +5,14 @@ that uses a main and other functions.menu
 """
 
 
-# score.py
-
 def get_valid_score():
     """Function to get a valid score from the user"""
-    while True:
-        try:
-            score = int(input("Enter a valid score (0-100 inclusive): "))
-            if 0 <= score <= 100:
-                return score
-            else:
-                print("Invalid score. Please try again.")
-        except ValueError:
-            print("Invalid input. Please enter a valid score.")
+    score = -1
+    while score < 0 or score > 100:
+        score = int(input("Enter a valid score (0-100 inclusive): "))
+        if not (0 < score > 100):
+            print("Invalid score. Please try again.")
+    return score
 
 
 def print_result(score):
@@ -35,8 +30,10 @@ def show_stars(score):
 
 def main():
     """Main function to run the program"""
-    score = get_valid_score()
-    while True:
+    option = ""
+
+    while option != "Q":
+
         print("\nMAIN MENU")
         print("(G)et a valid score")
         print("(P)rint result")
