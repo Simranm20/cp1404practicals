@@ -47,9 +47,3 @@ for i in range(0, 151, 50):
     print(f"{i:3}")
 
 
-my_num = 123
-print(f"{my_num:10}")
-print(f"{my_num:<10}")
-my_string = "Student"
-print(f"{my_string:10}")
-print(f"{my_string:>10}")

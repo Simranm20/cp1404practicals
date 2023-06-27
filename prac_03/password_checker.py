@@ -50,7 +50,6 @@ def is_valid_password(password):
 
     if SPECIAL_CHARS_REQUIRED and count_special == 0:
         return False
-
     return True
 
 
