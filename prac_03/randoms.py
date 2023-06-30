@@ -28,3 +28,5 @@ print(random.uniform(2.5, 5.5))  # line 3
 # Write code, not a comment, to produce a random number between 1 and 100 inclusive.
 # Answer: random.randint(1, 100)
 
+for i in range(0, 100):
+    print(random.randint(1, 100))
