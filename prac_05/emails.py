@@ -12,3 +12,10 @@ while user_email != "":
     name = " ".join(temp2).title()
     data[user_email] = name
 
+    flag = str(input(f"Is your name {name}? (Y/N)"))
+    if flag.upper() != "Y" and user_email != "":
+        name = input("Name: ")
+        data[user_email] = name
+
+for email, name in data.items():
+    print(f"{name} ({email})")
