@@ -14,9 +14,9 @@ CODE_TO_NAME = {
     "VIC": "Victoria",
     "TAS": "Tasmania"
 }
+
 print(CODE_TO_NAME)
-print(CODE_TO_NAME["QLD"])
-print(CODE_TO_NAME["VIC"])
+
 state_code = input("Enter short state(hit enter to quit): ").upper()
 while state_code != "":
     if state_code in CODE_TO_NAME:  # find key

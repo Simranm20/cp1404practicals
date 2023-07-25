@@ -1,14 +1,18 @@
 """
 CP1404/CP5632 Practical 05
 Wimbledon data-reading, processing and displaying
+Word Occurrences
+Estimate: 35 minutes
+Actual:   50 minutes
+
 """
 text = input("Text: ")
 # testing
-print(text)
+# print(text)
 words = text.split()
 words.sort()
 # testing
-print(words)
+# print(words)
 word_to_frequency = {}
 for word in words:
     # check if word is a key or not

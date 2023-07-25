@@ -1,6 +1,8 @@
 """
 CP1404/CP5632 Practical 05
 Wimbledon data-reading, processing and displaying
+Estimate: 60 minutes
+Actual: 1 hour
 """
 records = []
 champion = {}
@@ -24,5 +26,5 @@ for data in records:
 print("Wimbledon Champions: ")
 for name, counter in champion.items():
     print(name, counter)
-print(f"\n These {len(country)} countries have won Wimbledon: ")
+print(f"\nThese {len(country)} countries have won Wimbledon: ")
 print(". ".join(title for title in sorted(country)))
