@@ -1,6 +1,7 @@
 """
 CP1404/CP5632 Practical - 07
-My guitars code
+My guitars code to read all of these guitars and store
+them in a list of Guitar objects, using the classes.
 """
 from guitar import Guitar
 
