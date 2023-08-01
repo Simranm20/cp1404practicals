@@ -1,5 +1,5 @@
 """
-CP1404/CP5632 Practical - 6
+CP1404/CP5632 Practical - 06
 Programming Language client code.
 start time: 6:20 pm
 End time: 6:45 pm
