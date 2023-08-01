@@ -1,3 +1,7 @@
+"""
+CP1404/CP5632 Practical - 07
+My guitars code
+"""
 from guitar import Guitar
 
 # constants

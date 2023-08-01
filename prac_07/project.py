@@ -1,3 +1,9 @@
+"""
+CP1404/CP5632 Practical - 07
+Project code
+"""
+
+
 class Project:
     """Represent information about a project."""
 

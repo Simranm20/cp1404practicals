@@ -1,3 +1,9 @@
+"""
+CP1404/CP5632 Practical - 07
+Guitars code
+"""
+
+
 class Guitar:
     """Represent information about a guitar."""
 

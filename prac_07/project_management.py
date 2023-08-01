@@ -1,3 +1,8 @@
+"""
+CP1404/CP5632 Practical - 07
+Project Management
+"""
+
 from project import Project
 
 # constants
