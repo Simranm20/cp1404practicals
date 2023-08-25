@@ -5,23 +5,23 @@ Lindsay Ward, IT@JCU
 Started 13/10/2015
 """
 
-from kivy.app import App
-from kivy.lang import Builder
-from kivy.core.window import Window
-
 __author__ = 'Lindsay Ward'
 
 from kivy.app import App
-from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
-from kivy.uix.button import Button
 
 
 class SquareNumberApp(App):
     """ SquareNumberApp is a Kivy App for squaring a number """
+
+    def __init__(self):
+        super().__init__()
+        self.output_label = None
+        self.input_number = None
 
     def build(self):
         """ build the Kivy app from the kv file """
@@ -54,7 +54,7 @@ class SquareNumberApp(App):
 
         return root
 
-    def handle_calculate(self, instance):
+    def handle_calculate(self):
         """ handle calculation (could be button press or other call), output result to label widget """
         try:
             value = float(self.input_number.text)
