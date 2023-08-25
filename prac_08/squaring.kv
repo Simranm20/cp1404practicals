@@ -1,0 +1,37 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 40
+
+        Label:
+            text: 'Enter a number:'
+            size_hint_x: None
+            width: 100
+            color: 1, 0, 1, 1  # Pink color (RGBA tuple)
+
+        TextInput:
+            id: input_number
+            multiline: False
+
+        Button:
+            text: 'Square'
+            on_release: app.handle_calculate(input_number.text)
+
+    Label:
+        id: output_label
+        size_hint_y: None
+        height: 40
+        color: 1, 0, 1, 1  # Pink color (RGBA tuple)
+
+        # This label will display the result
+        # Result will be updated in the handle_calculate method
+        text: ''
+
+    Label:
+        text: 'Enter a number and press "Square"'
+        size_hint_y: None
+        height: 40
+        color: 1, 0, 1, 1  # Pink color (RGBA tuple)
